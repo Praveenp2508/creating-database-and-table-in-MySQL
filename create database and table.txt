@@ -1,0 +1,27 @@
+create database praveen;
+
+use praveen;
+
+create table students(
+stu_id int not null,
+stu_name varchar(40),
+age int not null,
+gender varchar(40),
+native varchar(40),
+course varchar(40),
+primary key(stu_id)
+);
+
+insert into students(stu_id,stu_name,age,gender,native,course)
+values(101,'praveen',22,'male','thanjavur','python full stack'),
+(102,'ruthesh',21,'male','theni','python full stack'),
+(103,'naveen raj',23,'male','salem','python full stack'),
+(104,'adhitiya',25,'male','trichy','data science'),
+(105,'sugan balan',22,'male','erode','python full stack'),
+(106,'sandy',22,'male','velur','python full stack');
+
+select * from students;
+
+
+drop table students;
+drop database praveen;
